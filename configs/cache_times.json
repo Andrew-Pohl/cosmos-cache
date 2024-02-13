@@ -1,12 +1,12 @@
 {
-    "DEFAULT": -2,
+    "DEFAULT": 5,
     "coingecko": {
         "seconds": 6
     },
     "rpc": {        
-        "health.*": -2,
-        "abci_info.*": -2,
-        "status.*": -2,
+        "health.*": 5,
+        "abci_info.*": 5,
+        "status.*": 5,
         
         "broadcast_tx_commit.*": 0,
         "broadcast_tx_sync.*": 0,
@@ -15,14 +15,14 @@
 
         "genesis.*": 259200,
 
-        "block": -2,
-        "block?height=": 3600,
+        "block": 5,
+        "block?height.*": 3600,
         "tx.*": 3600  
     },
     "rest": {        
         "cosmos\/auth\/v1beta1\/accounts": -1,
 
-        ".*\/blocks/latest": -2,
+        ".*\/blocks/latest": 5,
 
         ".*\/params": 3600,
         ".*\/minimum_gas_prices": 300,
